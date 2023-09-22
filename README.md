@@ -11,10 +11,10 @@ b. Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas ter
 c. Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?   
 d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 - Filter menggunakan “”ftp || ftp-data” .
-- Cari STOR , lalu di double tap.
+- Di sebelah sebelah kiri bawah kita dapat membuka bagian TCP. Di bagian tersebut kita dapat menemukan sequence number dan acknowledge number masing-masing paket Paket request STOR , lalu di double tap.
 
 ![dokumentasi-soalno1a](https://i.ibb.co/M2tKCYY/soal-no-1-a.jpg)
-- Cari Sequence Number dan Acknowledgement Number
+- Cari Sequence Number dan Acknowledgement Number untuk mengidentifikasi atau mengurutkan entitas.
 ![dokumentasi-soalno1b](https://i.ibb.co/6wFG9H8/dokumentasi-soal1-C.jpg)
 - Kembali ke page sebelumnya, lalu double tap di “Response 150” 
 - Cari Sequence Number dan Acknowledgement Number
@@ -24,8 +24,8 @@ d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari
 
 
 2. Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
-- Kita perlu menganalisis paket-paket HTTP. Kita dapat melakukan ini dengan mengetikkan "http" dalam kotak pencarian di bagian atas jendela Wireshark.
-- Setelah itu kita klik kanan untuk follow TCP Stream.
+- Kita perlu menganalisis paket-paket HTTP. Kita dapat melakukan ini dengan mengetikkan "http" dalam kotak pencarian di bagian atas jendela Wireshark. untuk menganalisis lalu lintas web dalam sesi jaringan, yang bisa sangat berguna dalam pemecahan masalah, pemantauan, dan analisis aplikasi web dan layanan web.
+- Setelah itu kita klik kanan untuk follow TCP Stream. Dengan mengklik opsi "Follow TCP Stream," dapat melihat seluruh percakapan atau aliran data antara dua entitas (biasanya klien dan server) dalam tcp tersebut.
 ![dokumentasi-soalno2](https://i.ibb.co/mXkrjYp/dokumentasi-soal2.jpg)
 - Lalu password (gunicorn) akan muncul, dan masukkan kedalam nc untuk mendapatkan flagnya.
 ![dokumentasi-soalno2A](https://i.ibb.co/n0SHSyR/dokumentasi-soal2-A.jpg)
@@ -44,7 +44,7 @@ B. Protokol layer transport apa yang digunakan?
 
 
 4. Untuk menjawab pertanyaan-pertanyaan tersebut berdasarkan file pcap yang diberikan, Kita dapat menggunakan perangkat lunak pemrosesan paket seperti Wireshark.
-- Buka file pcap dan dia bakal ke direct ke wireshark dan mencari Filter “frame.number==130”
+- Buka file pcap dan dia bakal ke direct ke wireshark dan mencari Filter “frame.number==130”  digunakan untuk memilih dan menampilkan paket jaringan yang memiliki nomor frame (frame number) tertentu dalam kumpulan paket yang sedang dianalisis.
 ![dokumentasi-soalno4A](https://i.ibb.co/TkFjtGp/dokumentasi-soal4-A.jpg)
 - Setelah itu kita melakukan double tap untuk mencari nilai pada “checksum”
 ![dokumentasi-soalno4B](https://i.ibb.co/TmFnXN6/dokumentasi-soal4-B.jpg)
@@ -53,7 +53,7 @@ B. Protokol layer transport apa yang digunakan?
 
 
 7. Berapa jumlah packet yang menuju IP 184.87.193.88?
-- Pertma kita akan melakukan pencarian pada filter “ip.dst==184.87.193.88”
+- Pertma kita akan melakukan pencarian pada filter “ip.dst==184.87.193.88” sebagai baris atau entri individu dalam tampilan paket. Setiap baris ini mewakili satu paket jaringan dalam sesi penangkapan yang sedang dianalisis. Baris atau "row" ini berisi informasi rinci tentang paket, termasuk nomor frame, waktu perekaman, sumber dan tujuan, protokol yang digunakan, dan data lain yang terkait dengan paket tersebut.
 ![dokumentasi-soalno7A](https://i.ibb.co/ZSf496Y/dokumentasi-soal7-A.jpg)
 - Setelah itu kita menghitung row yang ada pada layar wireshark, setelah menentukan row masukan pada nc untuk mendapatkan flagnya.
 ![dokumentasi-soalno7B](https://i.ibb.co/Fkpn3pk/dokumentasi-flag7.jpg)
@@ -70,8 +70,8 @@ B. Protokol layer transport apa yang digunakan?
 
 
 10. Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
-- Ketikan filter “telnet” untuk dimasukan.
-- Setelah itu kita klik kanan untuk follow TCP Stream.
+- Ketikan filter “telnet” untuk dimasukan.  jika kita memasukan filter 'telnet' melihat hanya paket-paket yang terkait dengan sesi Telnet, termasuk permintaan masuk, perintah yang dikirim oleh pengguna, dan respon dari sistem atau perangkat jarak jauh tersebut.
+- Setelah itu kita klik kanan untuk follow TCP Stream. untuk menemukan jawaban yang akan dimasukan untuk jawaban nc.
 ![dokumentasi-flagno10](https://i.ibb.co/61FXjxc/dokumentasi-flagno10.jpg)
 
 
