@@ -46,7 +46,7 @@ B. Protokol layer transport apa yang digunakan?
 4. Untuk menjawab pertanyaan-pertanyaan tersebut berdasarkan file pcap yang diberikan, Kita dapat menggunakan perangkat lunak pemrosesan paket seperti Wireshark.
 - Buka file pcap dan dia bakal ke direct ke wireshark dan mencari Filter “frame.number==130”  digunakan untuk memilih dan menampilkan paket jaringan yang memiliki nomor frame (frame number) tertentu dalam kumpulan paket yang sedang dianalisis.
 ![dokumentasi-soalno4A](https://i.ibb.co/TkFjtGp/dokumentasi-soal4-A.jpg)
-- Setelah itu kita melakukan double tap untuk mencari nilai pada “checksum”
+- Setelah itu kita melakukan double tap untuk mencari nilai pada “checksum”. double tap pada nilai "checksum" untuk  membuka jendela atau dialog yang memungkinkan Anda untuk memeriksa detail lebih lanjut tentang checksum yang terkait dengan paket tersebut.
 ![dokumentasi-soalno4B](https://i.ibb.co/TmFnXN6/dokumentasi-soal4-B.jpg)
 - Masukan checksum pada nc, lalu pada terminal akan memunculkan flagnya.
 ![dokumentasi-soalno4C](https://i.ibb.co/KXXGdyx/dokumentasi-flagno4.jpg)
@@ -59,7 +59,7 @@ B. Protokol layer transport apa yang digunakan?
 ![dokumentasi-soalno7B](https://i.ibb.co/Fkpn3pk/dokumentasi-flag7.jpg)
 
 8. Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
-- pertama kita masukan kueri “tcp.dstport == 80 or udp.dstport == 80” ke nc.
+- pertama kita masukan kueri “tcp.dstport == 80 or udp.dstport == 80” ke nc. ini digunakan digunakan untuk mengatur kondisi pada alat bernama nc, yang merupakan singkatan dari "netcat." Perintah ini memiliki dua bagian utama yang saling terhubung oleh operator logika "or" (atau).
 - Setelah disubmit, flag akan keluar Jarkom2023{qu3ryyyyying_043051_QiDxQlCzRjD_15_fun}
 ![dokumentasi-flagno8](https://i.ibb.co/dfRn1w4/dokumentasi-flagno8.jpg)
 
