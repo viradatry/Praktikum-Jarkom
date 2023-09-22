@@ -27,7 +27,7 @@ d. Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari
 - Kita perlu menganalisis paket-paket HTTP. Kita dapat melakukan ini dengan mengetikkan "http" dalam kotak pencarian di bagian atas jendela Wireshark. untuk menganalisis lalu lintas web dalam sesi jaringan, yang bisa sangat berguna dalam pemecahan masalah, pemantauan, dan analisis aplikasi web dan layanan web.
 - Setelah itu kita klik kanan untuk follow TCP Stream. Dengan mengklik opsi "Follow TCP Stream," dapat melihat seluruh percakapan atau aliran data antara dua entitas (biasanya klien dan server) dalam tcp tersebut.
 ![dokumentasi-soalno2](https://i.ibb.co/mXkrjYp/dokumentasi-soal2.jpg)
-- Lalu password (gunicorn) akan muncul, dan masukkan kedalam nc untuk mendapatkan flagnya.
+- Lalu password (gunicorn) akan muncul, dan masukkan kedalam nc untuk mendapatkan flagnya. disini menggunakan server gunicorn biasanya digunakan untuk menjalankan aplikasi web Python. Gunicorn adalah salah satu pilihan yang populer untuk menyajikan aplikasi web Python di produksi.
 ![dokumentasi-soalno2A](https://i.ibb.co/n0SHSyR/dokumentasi-soal2-A.jpg)
 - Setelah flag muncul, submit flag Jarkom2023{9unic0rn_1s_54K9cTAo517xmPz_c00l}.
 ![dokumentasi-flagno2](https://i.ibb.co/0mZSXvp/dokumentasi-flagno2.jpg)
